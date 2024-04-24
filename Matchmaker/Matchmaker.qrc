@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/Matchmaker">
+        <file>image/dragon.gif</file>
+        <file>image/marry.png</file>
+        <file>image/male.png</file>
+        <file>image/female.png</file>
+    </qresource>
+</RCC>

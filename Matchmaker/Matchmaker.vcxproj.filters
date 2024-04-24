@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Log">
+      <UniqueIdentifier>{8ee3806a-66da-412f-9b05-9fbc272855aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SQLiteCPP">
+      <UniqueIdentifier>{597ebad1-5368-4ea8-a13a-2e801931256c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log\log_imp">
+      <UniqueIdentifier>{e58b08f3-2f71-4281-aebe-3caf26e2291f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RegisterAccount">
+      <UniqueIdentifier>{0cfef2d5-117c-4a30-8a17-7d079c887365}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Matchmaker.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="HomePage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="HomePage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="HomePage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchMaker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Log\LogFrameWork.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Log\log_imp\ConsoleWin32.cpp">
+      <Filter>Log\log_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Log\log_imp\DateTime.cpp">
+      <Filter>Log\log_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Log\log_imp\FileAppender.cpp">
+      <Filter>Log\log_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Log\log_imp\LogImp.cpp">
+      <Filter>Log\log_imp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SQLiteCPP\Backup.cpp">
+      <Filter>SQLiteCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SQLiteCPP\Column.cpp">
+      <Filter>SQLiteCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SQLiteCPP\Database.cpp">
+      <Filter>SQLiteCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SQLiteCPP\Exception.cpp">
+      <Filter>SQLiteCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SQLiteCPP\Savepoint.cpp">
+      <Filter>SQLiteCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SQLiteCPP\SQLiteDBImpl.cpp">
+      <Filter>SQLiteCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SQLiteCPP\SQLiteDBInterface.cpp">
+      <Filter>SQLiteCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SQLiteCPP\Statement.cpp">
+      <Filter>SQLiteCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SQLiteCPP\Transaction.cpp">
+      <Filter>SQLiteCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterAccount.cpp">
+      <Filter>RegisterAccount</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInfoOperator.cpp">
+      <Filter>RegisterAccount</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchAplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="MatchMaker.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="RegisterAccountWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="MatchAplication.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MatchMaker.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="RegisterAccount.h">
+      <Filter>RegisterAccount</Filter>
+    </QtMoc>
+    <QtMoc Include="MatchAplication.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CoreObject.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Log\LogCategory.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Log\LogFrameWork.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Log\LogTypeDef.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Log\SafeHelper.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Log\UMConverter.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Log\log_imp\ConsoleAppender.h">
+      <Filter>Log\log_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Log\log_imp\ConsoleWin32.h">
+      <Filter>Log\log_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Log\log_imp\DateTime.h">
+      <Filter>Log\log_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Log\log_imp\FileAppender.h">
+      <Filter>Log\log_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Log\log_imp\LogAssert.h">
+      <Filter>Log\log_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Log\log_imp\LogImp.h">
+      <Filter>Log\log_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Log\log_imp\LogUtility.h">
+      <Filter>Log\log_imp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\Assertion.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\Backup.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\Column.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\Database.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\Exception.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\ExecuteMany.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\Savepoint.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\SQLiteCpp.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\SQLiteDBImpl.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\SQLiteDBInterface.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\Statement.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\Transaction.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\Utils.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SQLiteCPP\VariadicBind.h">
+      <Filter>SQLiteCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PreDeclare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="securec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInfoOperator.h">
+      <Filter>RegisterAccount</Filter>
+    </ClInclude>
+    <ClInclude Include="ICore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

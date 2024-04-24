@@ -1,0 +1,496 @@
+﻿SARibbonMainWindow {
+  background-color: #333333;
+  /*border: 1px solid #707070;*/
+}
+
+
+/*SARibbonBar 可设置标题字体*/
+SARibbonBar{
+  background-color: #555555;
+  font-size:16px;
+  font-family: "Microsoft YaHei";
+  color: #FFFFFF;
+}
+/*SARibbonButtonGroupWidget 快速栏使用了此组件*/
+SARibbonButtonGroupWidget{
+  background-color: #555555;
+  border:0px solid #333333;
+  min-width:40px;
+}
+SARibbonButtonGroupWidget>SARibbonToolButton[text="打开所在文件夹"]{
+  padding-left:15;
+  padding-right:15px;
+}
+SARibbonButtonGroupWidget>SARibbonToolButton[text="保存"]{
+  padding-left:15;
+  padding-right:15px;
+}
+SARibbonButtonGroupWidget>SARibbonToolButton[text="全部保存"]{
+  padding-left:15;
+  padding-right:15px;
+}
+
+SARibbonButtonGroupWidget[objectName="rightButtonGroup"]{
+  min-width:40px;
+  border:0px solid transparent;
+  border-top:1px solid #333333;
+  padding:0px;
+}
+SARibbonPannel > SARibbonButtonGroupWidget {
+  border: 1px solid #555555;
+  border: 1px solid #444444;
+}
+
+/*SARibbonQuickAccessBar*/
+SARibbonQuickAccessBar{
+  background-color: #555555;
+  font-family: "Microsoft YaHei";
+  min-width:180px;
+}
+/*SARibbonCtrlContainer*/
+SARibbonCtrlContainer {
+  background-color: #555555;
+}
+
+/*SARibbonCategory */
+SARibbonCategory:focus {
+  outline: none;
+}
+SARibbonCategory{
+  background-color: #555555;
+  font-size:14pt;
+  font-family: "Microsoft YaHei";
+  color:#FFFFFF;
+}
+/*管理page页面*/
+SARibbonStackedWidget {
+  background-color: #444444;
+  border: 0px 10px 0px 10px;
+  border-color:#444444;
+}
+
+/*SARibbonPannel*/
+SARibbonPannel {
+  background-color: #444444;
+  border: 1px, black;
+  color:#cccccc;
+  font-family:"Microsoft YaHei";
+}
+
+/*SARibbonTabBar font-size:16px;*/
+SARibbonTabBar{
+    background-color: #555555;
+	border-top:1px solid #333333;
+	font-size:16px;
+}
+SARibbonTabBar::tab {
+    color:#FFFFFF;
+    background: #555555;
+	font-family:"Microsoft YaHei";
+	font-size:16px;
+	border-top:1px solid #333333;
+	border-left:0px solid #555555;
+	border-right:0px solid #555555;
+    height:17px;
+	margin:0px,0px,0px,0px;
+	padding-top:10px;
+	padding-bottom:8px;
+	padding-left:20px;
+	padding-right:20px;
+}
+SARibbonTabBar::tab:selected, SARibbonTabBar::tab:hover {
+  border-top:1px solid #333333;
+  background: #555555;
+}
+SARibbonTabBar::tab:selected{
+    color:#FFFFFF;
+    border-top:1px solid #333333;
+    background: #444444;
+	border-width: 1px 0px 0px 0px;
+    border-bottom-color: #444444;
+	
+}
+SARibbonTabBar::tab:hover:!selected{
+	background: #a9a9a9;
+    color: #FFFFFF;
+}
+SARibbonTabBar::tab:!selected {
+    margin-top: 0px;
+}
+
+
+/*SARibbonApplicationButton  #467FBD蓝色*/
+SARibbonApplicationButton{
+    color:white;
+    border-top:1px solid #333333;
+	border-left:0px solid #555555;
+	border-right:1px solid #444444;
+	border-bottom:1px solid #555555;
+    background: #555555;
+	font-family:"Microsoft YaHei";
+}
+SARibbonApplicationButton::menu-indicator {
+   image: none;
+}
+SARibbonApplicationButton::hover{
+	border-top:1px solid #333333;
+    background: #a9a9a9;
+}
+SARibbonApplicationButton:!hover{
+    background-color: #555555;
+}
+SARibbonApplicationButton[text="打印"]::menu-indicator {
+   image: none;
+}
+
+SARibbonApplicationButton:focus{
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+SARibbonPannel>QToolButton{
+    border:1px solid #444444;
+    color:white;
+    background-color:#444444;
+	font-family: "Microsoft YaHei";
+	font-size:14px;
+	height:78px;
+	padding-bottom:16px;
+	padding-top:8px;
+}
+
+/*SARibbonToolButton*/
+SARibbonToolButton{
+    border:1px solid #444444;
+    color:white;
+    background-color:#444444;
+	font-family: "Microsoft YaHei";
+	font-size:14px;
+	min-width:10px;
+	max-width:50px;
+	border:0px;
+	padding-left:5px;
+	padding-right:5px;
+}
+SARibbonToolButton[text="执行lua脚本"]{
+	padding-left:12px;
+    padding-right:12px;
+}
+SARibbonToolButton[text="请登录"]{
+	min-height:35px;
+	width:30px;
+	border:0px solid #555555;
+	margin:0px;
+	padding:0px;
+	background-color:#555555;
+}
+SARibbonToolButton[text="请登录"]::hover { /*预选时变化设置,一些action按钮会起变化*/
+    background: #a9a9a9;
+    color: #FFFFFF;
+}
+SARibbonToolButton[text="显示编辑"]{
+	margin-left:10px;
+	margin-right:4px;
+}
+SARibbonPannel>QToolButton:focus {
+  border: 1px solid #333333;
+  color: #white;
+  background-color: #333333;
+}
+SARibbonPannel>QToolButton::pressed{
+    color:white;
+    border: 1px solid #333333;
+    background-color: #333333; /*#d2b48c*/
+}
+SARibbonPannel>QToolButton::checked{
+    color:white;
+    border: 1px solid #333333;
+    background-color: #333333;
+}
+SARibbonPannel>QToolButton::hover { /*预选时变化设置,一些action按钮会起变化*/
+    color:white;
+    border: 1px solid #333333;
+    background-color: #333333;
+}
+SARibbonToolButton::pressed{
+    color:white;
+    border: 1px solid #333333;
+    background-color: #333333; /*#d2b48c*/
+}
+SARibbonToolButton::checked{
+    color:white;
+    border: 1px solid #333333;
+    background-color: #333333;
+}
+SARibbonToolButton::hover { /*预选时变化设置,一些action按钮会起变化*/
+    color:white;
+    border: 1px solid #333333;
+    background-color: #333333;
+}
+SARibbonToolButton::!enabled{  /*让不能按得按钮显示显色*/
+    color:#f5f5dc;
+    border: 1px solid #555555;
+    background-color: #333333; /*#d2b48c  #808080*/
+}
+
+SARibbonButtonGroupWidget > SARibbonToolButton{
+	padding-left:6px;
+    padding-right:6px;
+	background-color:#555555;
+}
+
+/*SARibbonLineEdit*/
+SARibbonLineEdit {
+    border: 1px solid #C0C2C4;
+    background: transparent;
+    selection-background-color: #555555; /*#9BBBF7*/
+    selection-color: white;
+	color:#ffffff;
+	font-family: "Microsoft YaHei";
+}
+
+/*SARibbonControlButton*/
+SARibbonControlButton{ 
+  background-color:#555555;
+  border: 4px solid #555555;
+  min-height:20px;
+  font-family: "Microsoft YaHei";
+  color:white;
+}
+SARibbonControlButton#SARibbonGalleryButtonUp,#SARibbonGalleryButtonDown,#SARibbonGalleryButtonMore{
+  border: 1px solid transparent;
+}
+SARibbonControlButton#SARibbonBarHidePannelButton{
+  border: 1px solid transparent;
+}
+SARibbonControlButton::pressed{
+  border: 1px solid #555555;
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 #D3D3D3, stop:0.1282 #c0c0c0,stop:0.8333
+#a9a9a9, stop:1 #555555);
+}
+SARibbonControlButton::checked{
+  border: 1px solid #FCD364;
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 #D3D3D3, stop:0.1282 #c0c0c0,stop:0.8333
+#a9a9a9, stop:1 #555555);
+}
+SARibbonControlButton::hover {
+  border: 1px solid #555555;
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 #D3D3D3, stop:0.1282 #c0c0c0,stop:0.8333
+#a9a9a9, stop:1 #555555);
+ }
+
+SARibbonCheckBox{
+  font-family: "Microsoft YaHei";
+  color:white;
+  background-color: transparent;
+}
+
+/*SARibbonComboBox*/
+SARibbonComboBox {
+  border: 1px solid #ffffff;
+  color:#ffffff;
+  font-family: "Microsoft YaHei";
+  background-color: transparent;
+}
+SARibbonComboBox:hover{
+  border: 1px solid #ffffff;
+  color : white;
+  background-color: #555555;
+  font-family: "Microsoft YaHei";
+}
+SARibbonComboBox:editable {
+  color : white;
+  background: transparent;
+  selection-background-color: #555555;
+  selection-color: white;
+}
+SARibbonComboBox::drop-down {
+  subcontrol-origin: padding;
+  subcontrol-position: top right;
+  width: 15px;
+  border-left: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color:#ffffff;
+}
+SARibbonComboBox::drop-down:hover {
+  border: 1px solid transparent;
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 #D3D3D3, stop:0.1282 #c0c0c0,stop:0.8333
+#a9a9a9, stop:1 #555555);
+}
+SARibbonComboBox::down-arrow {
+  /*image: url(E:/code3.0/Kernel/code/ADP/thirdparty/SARibbon/src/SARibbonBar/resource/ArrowDown.png);*/
+}
+
+
+/*SARibbonPannelOptionButton*/
+SARibbonPannelOptionButton {
+  background-color: transparent;
+  color:white;
+  font-size:16pt;
+  font-family:"Microsoft YaHei";
+}
+
+SARibbonPannelOptionButton::hover {
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 #D3D3D3, stop:0.1282 #c0c0c0,stop:0.8333
+#a9a9a9, stop:1 #555555);
+  border: 0px;
+}
+
+/*SARibbonMenu*/
+SARibbonMenu {
+  color:white;
+  background-color: #333333;
+  border: 1px solid #555555;
+}
+SARibbonMenu::item {
+  padding: 5px 25px 5px 25px;
+  background-color: #333333;
+}
+SARibbonMenu::item:selected {
+  background-color: #555555;
+}
+SARibbonMenu::item:hover {
+    color:white;
+    border: 1px solid #d2b48c;
+	background-color:#d2b48c;
+}
+SARibbonMenu::icon{
+  margin-left: 1px;
+}
+
+
+/*SARibbonGallery*/
+SARibbonGallery {
+  background-color: transparent;
+  color: white;
+  font-family: "Microsoft YaHei";
+}
+/*SARibbonGalleryGroup*/
+SARibbonGalleryGroup {
+  show-decoration-selected: 1;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #555555;
+  font-family: "Microsoft YaHei";
+}
+SARibbonGalleryGroup::item:selected {
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 #D3D3D3, stop:0.1282 #c0c0c0,stop:0.8333
+#a9a9a9, stop:1 #555555);
+  color: black;
+}
+SARibbonGalleryGroup::item:hover {
+  border: 1px solid #555555;
+}
+/*RibbonGalleryViewport*/
+RibbonGalleryViewport {
+  background-color: #333333;
+}
+
+
+/*SARibbonSeparatorWidget  分隔键*/
+SARibbonSeparatorWidget{
+    /*background-color: red;*/
+    background-color: #666666;
+}
+
+SARibbonCategoryScrollButton {
+  border: 0px solid #555555;
+  color: white;
+  background-color: #555555;
+}
+
+SARibbonCategoryScrollButton[arrowType="3"] {
+  border-right-width: 1px;
+}
+
+SARibbonCategoryScrollButton[arrowType="4"] {
+  border-left-width: 1px;
+}
+
+SARibbonCategoryScrollButton::hover {
+  color: white;
+  background-color: #555555;
+}
+
+/*
+QHBoxLayout{
+background-color: #333333;
+border:10px solid #white;
+}
+QVBoxLayout
+{
+background-color: #333333;
+border:10px solid #white;
+}
+.QPushButton {
+    background-color: #333333;
+	border:none;
+	text-align:left;
+}
+.QPushButton:hover{
+  background-color:#555555;
+}
+
+.QPushButton#addComponent:pressed{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #484848,stop:1 #383838);
+}
+*/
+
+
+/*以下管理最下、最大和关闭按钮*/
+SAWindowToolButton { 
+  background-color: transparent; 
+  border:none;
+}
+SAWindowToolButton:focus {
+  outline: none;
+}
+SAWindowToolButton#SAMinimizeWindowButton {
+  image: url(:/image/resource/zuixiaohua.png);
+}
+
+SAWindowToolButton#SAMaximizeWindowButton:checked {
+  image:url(:/image/resource/zuidahua.png);
+}
+
+SAWindowToolButton#SAMaximizeWindowButton {
+  image:url(:/image/resource/zuida.png);
+}
+
+SAWindowToolButton#SAMinimizeWindowButton:hover,#SAMaximizeWindowButton:hover {
+  background-color:#808080;
+}
+
+SAWindowToolButton#SAMinimizeWindowButton:pressed,#SAMaximizeWindowButton:pressed {
+  background-color: #cacacb;
+}
+
+SAWindowToolButton#SACloseWindowButton {
+  image: url(:/image/resource/guanbi.png);
+}
+
+SAWindowToolButton#SACloseWindowButton:hover {
+  background-color: #e81123;
+  image: url(:/image/resource/Titlebar_Close_Hover.png);
+}
+
+SAWindowToolButton#SACloseWindowButton:pressed {
+  background-color: #f1707a;
+  image: url(:/image/resource/Titlebar_Close_Hover.png);
+}
+
+SAWindowToolButton#SARibbonBarHidePannelButton {
+  titlebar-shade-icon: url(:/image/resource/Titlebar_Shade.png);
+  titlebar-unshade-icon: url(:/image/resource/Titlebar_Unshade.png);
+}

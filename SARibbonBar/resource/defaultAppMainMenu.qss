@@ -1,0 +1,49 @@
+﻿/*以下管理最下、最大和关闭按钮*/
+SAWindowToolButton { 
+  background-color: white; 
+  border:none;
+}
+SAWindowToolButton:focus {
+  outline: none;
+}
+SAWindowToolButton#SAMinimizeWindowButton {
+  image: url(:/image/resource/Titlebar_Min.png);
+}
+
+SAWindowToolButton#SAMaximizeWindowButton:checked {
+  image:url(:/image/resource/Titlebar_Normal.png);
+}
+
+SAWindowToolButton#SAMaximizeWindowButton {
+  image:url(:/image/resource/Titlebar_Max.png);
+}
+
+SAWindowToolButton#SAMinimizeWindowButton:hover,#SAMaximizeWindowButton:hover {
+  background-color:#808080;
+}
+
+SAWindowToolButton#SAMinimizeWindowButton:pressed,#SAMaximizeWindowButton:pressed {
+  background-color: #cacacb;
+}
+
+SAWindowToolButton#SACloseWindowButton {
+  width: 12px;
+	height: 12px;
+	background-color: #cccccc;
+  image: url(E:/code3.0/Kernel/code/ADP/thirdparty/SARibbon/src/SARibbonBar/resource/guanbi.png);
+}
+
+SAWindowToolButton#SACloseWindowButton:hover {
+  background-color: #e81123;
+  image: url(:/image/resource/Titlebar_Close_Hover.png);
+}
+
+SAWindowToolButton#SACloseWindowButton:pressed {
+  background-color: #f1707a;
+  image: url(:/image/resource/Titlebar_Close_Hover.png);
+}
+
+SAWindowToolButton#SARibbonBarHidePannelButton {
+  titlebar-shade-icon: url(:/image/resource/Titlebar_Shade.png);
+  titlebar-unshade-icon: url(:/image/resource/Titlebar_Unshade.png);
+}
