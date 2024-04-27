@@ -15,7 +15,6 @@ public:
     void init();
     void addTabifiedDockWidget(Qt::DockWidgetArea area, QDockWidget* dockwidget);
 private:
-    QToolBar* m_toolBar{ nullptr };
     QDockWidget* m_maleShowWidget{ nullptr };
     QDockWidget* m_femaleShowWidget{ nullptr };
     QDockWidget* m_centerWidget{ nullptr };

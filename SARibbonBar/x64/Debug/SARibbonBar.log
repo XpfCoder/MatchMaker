@@ -1,4 +1,0 @@
-﻿  Reading Qt configuration (D:/QT/5.12.0/msvc2015_64/bin/qmake)
-  Generate moc_predefs.h
-D:\visual_studio2019\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(241,5): warning MSB8064: 项“debug\moc_predefs.h.cbt”的自定义生成成功，但指定的依赖项“f:\cpratice\matchmaker\saribbonbar\debug\moc_predefs.h.cbt”不存在。这可能会导致增量生成无法正常工作。
-  SARibbonBar.vcxproj -> F:\cpratice\Matchmaker\x64\Debug\SARibbonBar_d.dll

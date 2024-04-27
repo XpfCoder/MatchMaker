@@ -75,7 +75,7 @@ void MatchMaker::Login()
         QMessageBox::warning(this, u8"ÌáÊ¾", u8"Î´×¢²áÕËºÅ!", "OK");
 
     }
-
+    UserInfoOperator::getInterface()->clearBind(std::string("read"));
 }
 
 void MatchMaker::RegAccount()

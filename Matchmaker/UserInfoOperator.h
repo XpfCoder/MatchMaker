@@ -22,6 +22,7 @@ public:
 	bool initUserListDB();
 	bool createUserListTable();
 	bool isExistResource(const char* key);
+	bool clearBind(const std::string& statement);
 	std::unique_ptr<SQLiteDBInterface> m_userInfoSqliteDB;
 private:
 	UserInfoOperator();

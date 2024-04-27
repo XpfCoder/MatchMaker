@@ -121,6 +121,12 @@
     <ClCompile Include="PopupMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ImageItemModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StyleItemDelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="MatchMaker.ui">
@@ -257,6 +263,15 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="SARibbonRegistrater.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageItemModel.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StyleItemDelegate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicDataObj.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

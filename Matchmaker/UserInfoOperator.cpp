@@ -90,3 +90,28 @@ bool UserInfoOperator::isExistResource(const char* key)
 	}
 	return false;
 }
+
+
+bool UserInfoOperator::clearBind(const std::string& statement)
+{
+	if (!m_userInfoSqliteDB)
+	{
+		return false;
+	}
+	std::string strErr;
+	int retV = 0;
+	if (statement.empty())
+	{
+		retV |= m_userInfoSqliteDB->clearBindinds(strErr);
+		retV |= m_userInfoSqliteDB->statementReset(strErr);
+	}
+	else
+	{
+		retV |= m_userInfoSqliteDB->clearBindinds(strErr, statement);
+		retV |= m_userInfoSqliteDB->statementReset(strErr, statement);
+	}
+	if (retV == 0)
+		return true;
+	LogErrorEx(__FUNCTION__, ": clear bind failed.");
+	return false;
+}
