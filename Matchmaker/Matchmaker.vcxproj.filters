@@ -109,6 +109,18 @@
     <ClCompile Include="CoreObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SARibbonBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StyleAlter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CategoryTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PopupMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="MatchMaker.ui">
@@ -133,6 +145,15 @@
     </QtMoc>
     <QtMoc Include="CoreObject.h">
       <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="StyleAlter.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SARibbonBuilder.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PopupMenu.h">
+      <Filter>Source Files</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +252,12 @@
     </ClInclude>
     <ClInclude Include="ICore.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CategoryTree.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SARibbonRegistrater.hpp">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
